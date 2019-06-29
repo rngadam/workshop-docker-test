@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# File Name: string_test.py
+# File Name: mstring_test.py
 # Copyright: Jun 2019 Shanghai Mowen Technology Co., Ltd
 # Author:    F. Wang
 # -----------------------------------------------------------------------------
@@ -10,7 +10,7 @@
 
 import unittest
 
-import string
+import mstring
 
 
 # -----------------------------------------------------------------------------
@@ -29,7 +29,7 @@ import string
 class TestString(unittest.TestCase):
 
     def test_execute(self):
-      self.assertEqual(True, string.compareString('a', 'a'))
+      self.assertEqual(True, mstring.compareString('a', 'a'))
 
 if __name__ == '__main__':
     unittest.main()

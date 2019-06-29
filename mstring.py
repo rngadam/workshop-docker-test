@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# File Name: string.py
+# File Name: mstring.py
 # Copyright: Jun 2019 Shanghai Mowen Technology Co., Ltd
 # Author:    F. Wang
 # -----------------------------------------------------------------------------
