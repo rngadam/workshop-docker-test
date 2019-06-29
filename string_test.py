@@ -29,7 +29,7 @@ import string
 class TestString(unittest.TestCase):
 
     def test_execute(self):
-      self.assertEqual(True, string.compareString(1))
+      self.assertEqual(True, string.compareString('a', 'a'))
 
 if __name__ == '__main__':
     unittest.main()
