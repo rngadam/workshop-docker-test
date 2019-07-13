@@ -6,11 +6,14 @@ class RunException(Exception):
 class RunExceptionInvalidParameter(RunException):
     pass
 
-def execute(param):
+def read_config():
+    return int(open('config', 'r').readline())
+
+def execute(param, base=1):
     try:
-        return param + 1
+        return param + base
     except TypeError:
         raise RunExceptionInvalidParameter('invalid parameter')
 
 if __name__ == "__main__":
-    print(execute(1))
+    print(execute(1, read_config()))
