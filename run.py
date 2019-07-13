@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 class RunException(Exception):
     pass
 
@@ -16,4 +18,4 @@ def execute(param, base=1):
         raise RunExceptionInvalidParameter('invalid parameter')
 
 if __name__ == "__main__":
-    print(execute(1, read_config()))
+    print(execute(int(sys.argv[1]), read_config()))
