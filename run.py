@@ -8,8 +8,8 @@ class RunException(Exception):
 class RunExceptionInvalidParameter(RunException):
     pass
 
-def read_config():
-    return int(open('config', 'r').readline())
+def read_config(f):
+    return int(f.readline())
 
 def execute(param, base=1):
     try:
@@ -18,4 +18,4 @@ def execute(param, base=1):
         raise RunExceptionInvalidParameter('invalid parameter')
 
 if __name__ == "__main__":
-    print(execute(int(sys.argv[1]), read_config()))
+    print(execute(int(sys.argv[1]), read_config(open('config', 'r'))))
